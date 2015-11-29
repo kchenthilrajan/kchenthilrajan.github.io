@@ -22,8 +22,8 @@
 			return '<div class="col-md-3 col-sm-3"><h4  class="subheading" style="text-transform: none;">'+tech.label+'</h4></div>'+
 					'<div class="col-md-9 col-sm-9">'+
 								'<div class="progress">'+
-									'<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '+tech.value+'%;">'+
-									'<span class="sr-only">80% Complete</span>'+
+									'<div class="progress-bar progress-bar-success progress-bar-stripped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: '+(tech.value*10)+'%;">'+
+									tech.value+
 									'</div>'+
 								'</div>'+
 					'</div>';
@@ -64,46 +64,47 @@ $(function() {
     });
 	
 	//Append to services
-	[{label : 'HTML/CSS',fa_icon:'html5',content:'Experience in HTML5/CSS technologies'+
-		'for more than 5 years.'},
-	 {label : 'Javascript Technologies',fa_icon:'laptop',content:'Experience in HTML5/CSS technologies'+
-		'for more than 5 years.'},
-	 {label : 'Java/J2EE/REST',fa_icon:'coffee',content:'Java technologies'+
-		'for more than 5 years.'}].forEach(function(service){
+	[{label : 'HTML/CSS',fa_icon:'html5',content:'Got good exposure to UI, Performed slicing and dicing to convert a Photoshop design into a fully functional HTML, CSS and JS enabled website.	Worked on CSS Background/Positioning/Padding/Sprites, etc'},
+	 {label : 'Javascript Technologies',fa_icon:'laptop',content:' Experience in Functional and Object Oriented Programming style of Javascript. Expertise in Full Web Stack libraries like AngularJS, UnderscoreJS, NodeJS, ExpressJS.'},
+	 {label : 'Java/J2EE/REST',fa_icon:'coffee',content:'Expertise in Java/J2EE technologies like core Java, Servlets, SpringMVC, Hibernate,SOAP, WSDL, REST.'}].forEach(function(service){
 		$('#services>.container>.text-center').append(serviceTemplate(service));
 	});
 	
 	//Append to the Technologies
-	[{label:'HTML5',value:'88'},
-	 {label:'CSS3',value:'90'},
-	 {label:'Java',value:'90'},
-	 {label:'J2EE',value:'90'},
-	 {label:'SpringMVC',value:'90'},
-	 {label:'AngulrJS',value:'75'}].forEach(function(tech){
+	[{label:'Javascript',value:7.8},
+	{label:'HTML5',value:7.8},
+	 {label:'CSS3',value:7.0},
+	 {label:'AngularJS',value:7.8},
+	 {label:'NodeJS',value:7.8},
+	 {label:'jQquery',value:7.8},
+	 {label:'Java',value:8.0},
+	 {label:'J2EE',value:7.5},
+	 {label:'SpringMVC',value:7.5},
+	 {label:'Bootstrap',value:7.0}].forEach(function(tech){
 		$('.portfolio-item .row').append(techTemplate(tech));
 	});
 	
 	//Append to the Technologies
-	[{image:'1',duration:'Sept 2014 - Till Date',
+	[{image:'1',duration:'Oct 2014 - Till Date',
 		project:'Advertisers Experience Platform (Software Engineer - UI/Javascript)',
-		company:'Google Inc, Irvine,CA',
-		body:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!'},
-		{image:'2',duration:'July 2013 - Sept 2014',
+		company:'Google Inc, Irvine, CA',
+		body:'AXP - Advertisers Experience Platform helps the client to reach out to the customers by sending customized emails.'},
+		{image:'2',duration:'Sept 2012 - Sept 2014',
 		project:'Encounter Data Processing System (Full Stack Developer)',
 		company:'Dynamic Healthcare, Irvine, CA',
-		body:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!'},
-		{image:'3',duration:'June 2012 - June 2013',
+		body:'EDPS is a claims processing system which validates the healthcare claims for proper values/format as per the recommendation of Center for Medical Services.'},
+		{image:'3',duration:'July 2011 - Sept 2012',
 		project:'RSDVR Simulator (Java/J2EE Developer)',
 		company:'Cablevision, Woodbridge, NY',
-		body:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!'},
-		{image:'4',duration:'Sept 2014 - Till Date',
-		project:'Advertisers Experience Platform',
-		company:'Google Inc, Irvine',
-		body:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!'},
-		{image:'5',duration:'Sept 2014 - Till Date',
-		project:'Advertisers Experience Platform',
-		company:'Google Inc, Irvine',
-		body:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!'}
+		body:'RSDVR Simulator is a web based test suite which simulates the behavior of a RSDVR(Cable box) to ease the testing process. The simulator can perform varying tests ranging from unit tests, functional tests and load tests, monitoring the feedback for the tests performed and also creates daily report'},
+		{image:'4',duration:'Oct 2010 - July 2011',
+		project:'REACH Westchester.',
+		company:'Westchester County, White Plains, NY',
+		body:'REACH Westchester provides assistance to recipients to complete their recertification interview online through an in-office kiosk or a web-based application. The step-by-step process makes it easier for the recipient and will save the county more than $2 million a year.'},
+		{image:'5',duration:'Feb 2010 - Sept 2010',
+		project:'Samsung USA News',
+		company:'Samsung Electronics, Ridgefield Park, NJ',
+		body:'Samsung USA News is an outlet for media professionals & consumers to follow news regarding new products & events'}
 		].forEach(function(tech){
 		$('.timeline').append(timelineTemplate(tech));
 	});

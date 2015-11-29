@@ -321,7 +321,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 10px 0;
 }
 
 section h2.section-heading {
@@ -864,4 +864,11 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+
+.awards {
+	height:115px; 
+	margin-bottom : 10px;
+	padding: 25px;
+	border:1px solid #0048f2;
 }
