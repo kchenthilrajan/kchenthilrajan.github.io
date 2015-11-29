@@ -71,16 +71,19 @@ $(function() {
 	});
 	
 	//Append to the Technologies
-	[{label:'Javascript',value:7.8},
-	{label:'HTML5',value:7.8},
+	[{label:'Javascript',value:7.5},
+	{label:'HTML5',value:7.0},
 	 {label:'CSS3',value:7.0},
-	 {label:'AngularJS',value:7.8},
-	 {label:'NodeJS',value:7.8},
-	 {label:'jQquery',value:7.8},
+	 {label:'AngularJS',value:7.5},
+	 {label:'NodeJS',value:7.0},
+	 {label:'jQquery',value:7.5},
 	 {label:'Java',value:8.0},
 	 {label:'J2EE',value:7.5},
 	 {label:'SpringMVC',value:7.5},
-	 {label:'Bootstrap',value:7.0}].forEach(function(tech){
+	 {label:'Bootstrap',value:7.0},
+	 {label:'RDBMS',value:7.0},
+	 {label:'REST',value:7.5},
+	 ].forEach(function(tech){
 		$('.portfolio-item .row').append(techTemplate(tech));
 	});
 	
