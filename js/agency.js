@@ -72,8 +72,8 @@ $(function() {
 	
 	//Append to the Technologies
 	[{label:'Javascript',value:8.5},
-	{label:'HTML5',value:7.5},
-	 {label:'CSS3',value:7.5},
+	{label:'HTML5',value:8.5},
+	 {label:'CSS3',value:8.5},
 	 {label:'AngularJS',value:7.5},
 	 {label:'NodeJS',value:7.0},
 	 {label:'jQquery',value:7.5},
@@ -124,5 +124,3 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
-
-
