@@ -13,6 +13,12 @@ body {
     color: #777;
 }
 
+p.logofont {
+    font-size: 120px;
+}
+/* * {
+    border: 1px solid rgb(241, 241, 241);
+} */
 .text-primary {
     color: #fed136;
 }
@@ -297,10 +303,10 @@ header .intro-text .intro-heading {
 }
 
 @media(min-width:768px) {
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
+    /* header .intro-text { */
+        /* padding-top: 300px; */
+        /* padding-bottom: 200px; */
+    /* } */
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
@@ -337,12 +343,6 @@ section h3.section-subheading {
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
-}
-
-@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
 }
 
 .service-heading {
@@ -441,12 +441,12 @@ section h3.section-subheading {
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: #fed136;
 }
 
 .timeline>li {
     position: relative;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     min-height: 50px;
 }
 
@@ -489,7 +489,7 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: 70px solid #fff;
     border-radius: 100%;
     text-align: center;
     color: #fff;
@@ -545,16 +545,16 @@ section h3.section-subheading {
         left: 50%;
     }
 
-    .timeline>li {
+    /* .timeline>li {
         margin-bottom: 100px;
         min-height: 100px;
-    }
+    } */
 
     .timeline>li .timeline-panel {
         float: left;
-        width: 41%;
+        width: 50%;
         padding: 0 20px 20px 30px;
-        text-align: right;
+        /* text-align: right; */
     }
 
     .timeline>li .timeline-image {
@@ -582,10 +582,6 @@ section h3.section-subheading {
         min-height: 150px;
     }
 
-    .timeline>li .timeline-panel {
-        padding: 0 20px 20px;
-    }
-
     .timeline>li .timeline-image {
         width: 150px;
         height: 150px;
@@ -605,11 +601,7 @@ section h3.section-subheading {
 
 @media(min-width:1200px) {
     .timeline>li {
-        min-height: 170px;
-    }
-
-    .timeline>li .timeline-panel {
-        padding: 0 20px 20px 100px;
+        min-height: 120px;
     }
 
     .timeline>li .timeline-image {
@@ -867,8 +859,14 @@ body {
 }
 
 .awards {
-	height:115px; 
-	margin-bottom : 10px;
-	padding: 25px;
-	border:1px solid #0048f2;
+    height: 109px;
+    margin-bottom: 10px;
+    padding: 36px;
+    border: 2px solid #fed136;
+    border-radius: 32px;
+    font-weight: bold;
+}
+
+.timeline-body > ul {
+    list-style: none;
 }

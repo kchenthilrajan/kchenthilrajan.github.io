@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
 	var serviceTemplate = (function(service){
 		return function(service){
@@ -36,17 +31,11 @@
 			var liClass = flip?'<li>':'<li class="timeline-inverted">';
 			flip = !flip;
 			return liClass+
-                            '<div class="timeline-image">'+
-                                '<img class="img-circle img-responsive" src="img/about/'+timeline.image+'.jpg" alt="">'+
-                            '</div>'+
                             '<div class="timeline-panel">'+
                                 '<div class="timeline-heading">'+
                                     '<h5>'+timeline.duration+'</h5>'+
-                                    '<h4 class="subheading">'+timeline.project+'</h4>'+
-                                '</div>'+
-                                '<div class="timeline-body">'+
-									'<h4 class="subheading">'+timeline.company+'</h4>'+
-                                    '<p class="text-muted">'+timeline.body+'</p>'+
+									'<h5 class="subheading">'+timeline.company+'</h5>'+
+                                    '<h4 class="subheading">'+timeline.role+'</h4>'+
                                 '</div>'+
                             '</div>'+
                         '</li>';
@@ -64,23 +53,23 @@ $(function() {
     });
 	
 	//Append to services
-	[{label : 'HTML/CSS',fa_icon:'html5',content:'Got good exposure to UI, Performed slicing and dicing to convert a Photoshop design into a fully functional HTML, CSS and JS enabled website.	Worked on CSS Background/Positioning/Padding/Sprites, etc'},
-	 {label : 'Javascript Technologies',fa_icon:'laptop',content:' Experience in Functional and Object Oriented Programming style of Javascript. Expertise in Full Web Stack libraries like AngularJS, UnderscoreJS, NodeJS, ExpressJS.'},
-	 {label : 'Java/J2EE/REST',fa_icon:'coffee',content:'Expertise in Java/J2EE technologies like core Java, Servlets, SpringMVC, Hibernate,SOAP, WSDL, REST.'}].forEach(function(service){
+	[
+		{ label: 'Javascript/ReactJS', fa_icon: 'laptop', 
+			content: ' Experience in Functional and Object Oriented Programming style of Javascript.' },
+		{ label: 'Java/REST', fa_icon: 'coffee', content: 'Expertise in Java/J2EE technologies.' },
+		{ label: 'HTML/CSS', fa_icon: 'html5', content: 'Got good exposure to UI, HTML, CSS and JS enabled website.' }].forEach(function (service) {
 		$('#services>.container>.text-center').append(serviceTemplate(service));
 	});
 	
 	//Append to the Technologies
-	[{label:'Javascript',value:8.5},
-	{label:'HTML5',value:8.5},
-	 {label:'CSS3',value:8.5},
-	 {label:'AngularJS',value:7.5},
+	[{label:'Javascript',value:8.0},
+	 {label:'React JS',value:8.5},
+	 {label:'HTML5',value:8.0},
+	 {label:'CSS3',value:7.5},
 	 {label:'NodeJS',value:7.0},
 	 {label:'jQquery',value:7.5},
 	 {label:'Java',value:9.0},
 	 {label:'J2EE',value:8.5},
-	 {label:'SpringMVC',value:8.5},
-	 {label:'Bootstrap',value:8.0},
 	 {label:'RDBMS',value:8.0},
 	 {label:'REST',value:8.5},
 	 ].forEach(function(tech){
@@ -88,27 +77,38 @@ $(function() {
 	});
 	
 	//Append to the Technologies
-	[{image:'1',duration:'Oct 2014 - Till Date',
-		project:'Advertisers Experience Platform (Software Engineer - UI/Javascript)',
-		company:'Google Inc, Irvine, CA',
-		body:'AXP - Advertisers Experience Platform helps the client to reach out to the customers by sending customized emails.'},
-		{image:'2',duration:'Sept 2012 - Sept 2014',
-		project:'Encounter Data Processing System (Full Stack Developer)',
-		company:'Dynamic Healthcare, Irvine, CA',
-		body:'EDPS is a claims processing system which validates the healthcare claims for proper values/format as per the recommendation of Center for Medical Services.'},
-		{image:'3',duration:'July 2011 - Sept 2012',
-		project:'RSDVR Simulator (Java/J2EE Developer)',
-		company:'Cablevision, Woodbridge, NY',
-		body:'RSDVR Simulator is a web based test suite which simulates the behavior of a RSDVR(Cable box) to ease the testing process. The simulator can perform varying tests ranging from unit tests, functional tests and load tests, monitoring the feedback for the tests performed and also creates daily report'},
-		{image:'4',duration:'Oct 2010 - July 2011',
-		project:'REACH Westchester.',
-		company:'Westchester County, White Plains, NY',
-		body:'REACH Westchester provides assistance to recipients to complete their recertification interview online through an in-office kiosk or a web-based application. The step-by-step process makes it easier for the recipient and will save the county more than $2 million a year.'},
-		{image:'5',duration:'Feb 2010 - Sept 2010',
-		project:'Samsung USA News',
-		company:'Samsung Electronics, Ridgefield Park, NJ',
-		body:'Samsung USA News is an outlet for media professionals & consumers to follow news regarding new products & events'}
-		].forEach(function(tech){
+	[
+		{
+			image:'1',
+			duration:'July 2019 - Till Date',
+			role:'Senior Software Engineer(Frontend)',
+			company:'Valtix, Santa Clara, CA',
+		},
+		{
+			image:'2',
+			duration:'Dec 2018 - July 2019',
+			role:'Senior Full Stack Developer',
+			company:'Walmart Labs, Sunnyvale, CA',
+		},
+		{
+			image:'3',
+			duration:'Mar 2016 - Dec 2018',
+			role:'Senior Software Engineer',
+			company:'Equinix, Sunnyvale, CA',
+		},
+		{
+			image:'4',
+			duration:'Sep 2012 - Mar 2016',
+			role: 'Senior Software Engineer',
+			company:'Dynamic Healthcare Services, Irvine, CA',
+		},
+		{
+			image:'5',
+			duration:'July 2011 - Sep 2012',
+			role: 'Senior Software Engineer',
+			company:'CableVision, Long Island, NY',
+		}
+	].forEach(function(tech){
 		$('.timeline').append(timelineTemplate(tech));
 	});
 	
