@@ -20,7 +20,7 @@ p.logofont {
     border: 1px solid rgb(241, 241, 241);
 } */
 .text-primary {
-    color: #fed136;
+    color: #ea1e6a;
 }
 
 p {
@@ -41,14 +41,14 @@ a.active {
 }
 
 a {
-    color: #fed136;
+    color: #ea1e6a;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: #ea1e6a;
 }
 
 h1,
@@ -75,12 +75,12 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #fed136;
+    border-color: #ea1e6a;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #ea1e6a;
 }
 
 .btn-primary:hover,
@@ -88,9 +88,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
+    border-color: #ea1e6a;
     color: #fff;
-    background-color: #fec503;
+    background-color: #ea1e6a;
 }
 
 .btn-primary:active,
@@ -114,25 +114,25 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #ea1e6a;
+    background-color: #ea1e6a;
 }
 
 .btn-primary .badge {
-    color: #fed136;
+    color: #ea1e6a;
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #fed136;
+    border-color: #ea1e6a;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #ea1e6a;
 }
 
 .btn-xl:hover,
@@ -140,9 +140,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
+    border-color: #ea1e6a;
     color: #fff;
-    background-color: #fec503;
+    background-color: #ea1e6a;
 }
 
 .btn-xl:active,
@@ -166,12 +166,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #ea1e6a;
+    background-color: #ea1e6a;
 }
 
 .btn-xl .badge {
-    color: #fed136;
+    color: #ea1e6a;
     background-color: #fff;
 }
 
@@ -182,14 +182,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+    color: #ea1e6a;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #ea1e6a;
 }
 
 .navbar-default .navbar-collapse {
@@ -197,8 +197,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #ea1e6a;
+    background-color: #ea1e6a;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -207,7 +207,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: #ea1e6a;
 }
 
 .navbar-default .nav li a {
@@ -221,19 +221,19 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fed136;
+    color: #ea1e6a;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136;
+    background-color: #ea1e6a;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #fec503;
+    background-color: #ea1e6a;
 }
 
 @media(min-width:768px) {
@@ -332,17 +332,15 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 section h3.section-subheading {
-    margin-bottom: 75px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .service-heading {
@@ -441,7 +439,7 @@ section h3.section-subheading {
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #fed136;
+    background-color: #ea1e6a;
 }
 
 .timeline>li {
@@ -493,7 +491,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #ea1e6a;
 }
 
 .timeline>li .timeline-image h4 {
@@ -672,7 +670,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: #ea1e6a;
     box-shadow: none;
 }
 
@@ -750,7 +748,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: #ea1e6a;
 }
 
 .btn:focus,
@@ -838,12 +836,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fed136;
+    background: #ea1e6a;
 }
 
 ::selection {
     text-shadow: none;
-    background: #fed136;
+    background: #ea1e6a;
 }
 
 img::selection {
@@ -855,14 +853,14 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #fed136;
+    webkit-tap-highlight-color: #ea1e6a;
 }
 
 .awards {
     height: 109px;
     margin-bottom: 10px;
     padding: 36px;
-    border: 2px solid #fed136;
+    border: 2px solid #ea1e6a;
     border-radius: 32px;
     font-weight: bold;
 }
