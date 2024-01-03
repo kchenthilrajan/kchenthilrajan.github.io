@@ -64,14 +64,11 @@ $(function() {
 	//Append to the Technologies
 	[{label:'Javascript',value:8.0},
 	 {label:'React JS',value:8.5},
+	 {label:'Java/J2EE',value:8.5},
+	 {label:'API/REST',value:8.5},
 	 {label:'HTML5',value:8.0},
 	 {label:'CSS3',value:7.5},
 	 {label:'NodeJS',value:7.0},
-	 {label:'jQquery',value:7.5},
-	 {label:'Java',value:9.0},
-	 {label:'J2EE',value:8.5},
-	 {label:'RDBMS',value:8.0},
-	 {label:'REST',value:8.5},
 	 ].forEach(function(tech){
 		$('.portfolio-item .row').append(techTemplate(tech));
 	});
